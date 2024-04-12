@@ -59,7 +59,7 @@ class ClearingScreen(Screens):
     def handle_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.back_button:
-                self.change_screen('camp screen')
+                self.change_screen(game.last_screen_forupdate)
             if event.ui_element == self.stop_focus_button:
                 self.feed_all_button.show()
                 self.stop_focus_button.hide()
