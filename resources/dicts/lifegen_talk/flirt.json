@@ -1,5 +1,5 @@
 {
-    "ad9wkx7": [
+    "old_flirt_1": [
         [
             "Any",
             "reject",
@@ -16,6 +16,7 @@
         [
             "Any",
             "reject",
+            "non-mates",
             "platonic_love"
         ],
         [
@@ -26,13 +27,14 @@
         [
             "Any",
             "reject",
+            "non-mates",
             "platonic_love"
         ],
         [
             "Ehh ... Good one, bestie! Heh ..."
         ]
     ],
-    "h2k7jd2": [
+    "old_flirt_2": [
         [
             "Any",
             "reject",
@@ -43,9 +45,10 @@
             "Oh... I didn't know you... saw me that way."
         ]
     ],
-    "d9r2gs4": [
+    "old_flirt_3": [
         [
             "Any",
+            "reject",
             "silly",
             "sweet",
             "non-mates"
@@ -55,7 +58,7 @@
             "You're such a good friend."
         ]
     ],
-    "j9h3sd5": [
+    "old_flirt_4": [
         [
             "Any",
             "reject",
@@ -67,7 +70,7 @@
             "Please, let me teach you how to flirt."
         ]
     ],
-    "h2d5jf0": [
+    "old_flirt_5": [
         [
             "Any",
             "reject",
@@ -79,7 +82,7 @@
             "Sorry, I... already like someone else?"
         ]
     ],
-    "p4s3kc1": [
+    "old_flirt_6": [
         [
             "Any",
             "reject",
@@ -89,7 +92,7 @@
             "Huh? Oh, um... thank you? *Snrk*"
         ]
     ],
-    "h2w5gs2": [
+    "old_flirt_7": [
         [
             "Any",
             "reject",
@@ -100,7 +103,7 @@
             "That's... nice of you to say."
         ]
     ],
-    "b9g2hs4": [
+    "old_flirt_8": [
         [
             "Any",
             "reject",
@@ -111,7 +114,7 @@
             "Haha! That's the funniest joke I've heard all season!"
         ]
     ],
-    "j7h3xs5": [
+    "old_flirt_9": [
         [
             "Any",
             "reject",
@@ -122,7 +125,7 @@
             "...That's a joke, right?"
         ]
     ],
-    "k3x7js6": [
+    "old_flirt_10": [
         [
             "Any",
             "reject",
@@ -135,7 +138,7 @@
             "You've got to be joking."
         ]
     ],
-    "b8d3gs7": [
+    "old_flirt_11": [
         [
             "Any",
             "reject",
@@ -145,7 +148,7 @@
             "Eh, hehehe ... Might wanna rethink that one a little y_c."
         ]
     ],
-    "g5h6xd8": [
+    "old_flirt_12": [
         [
             "Any",
             "reject",
@@ -155,7 +158,7 @@
             "Whatever."
         ]
     ],
-    "a9w5kf9": [
+    "old_flirt_13": [
         [
             "Any",
             "reject",
@@ -167,7 +170,7 @@
             "... Is that the best you could do?"
         ]
     ],
-    "b9d3ks0": [
+    "old_flirt_14": [
         [
             "Any",
             "reject",
@@ -177,7 +180,7 @@
             "Stop that, it's not getting you anywhere."
         ]
     ],
-    "h4j7xs1": [
+    "old_flirt_15": [
         [
             "Any",
             "reject",
@@ -187,7 +190,7 @@
             "What is it going to take in order for you to leave me alone?"
         ]
     ],
-    "f8h5xs2": [
+    "old_flirt_16": [
         [
             "Any",
             "reject",
@@ -199,7 +202,7 @@
             "That might just be the worst attempt at flirting I've heard in moons!"
         ]
     ],
-    "h2k5jd3": [
+    "old_flirt_17": [
         [
             "Any",
             "reject",
@@ -210,7 +213,7 @@
             "... Okay?"
         ]
     ],
-    "j5d7hs4": [
+    "old_flirt_18": [
         [
             "Any",
             "reject",
@@ -223,7 +226,7 @@
             "... Ew."
         ]
     ],
-    "k3w9gf5": [
+    "old_flirt_19": [
         [
             "Any",
             "reject",
@@ -236,7 +239,7 @@
             "Ew. No."
         ]
     ],
-    "h3k7gf6": [
+    "old_flirt_20": [
         [
             "Any",
             "reject",
@@ -250,29 +253,32 @@
             "Not a chance in StarClan."
         ]
     ],
-    "j5h3sd7": [
+    "old_flirt_21": [
         [
-            "medicine cat",
-            "medicine cat apprentice",
-            "reject"
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "you_any",
+            "reject",
+            "non-mates"
         ],
         [
             "I think StarClan gave me an omen warning me about this."
         ]
     ],
-    "h6w5kd8": [
+    "old_flirt_22": [
         [
             "Any",
             "reject",
             "assertive",
             "upstanding",
-            "cool"
+            "cool",
+            "non-mates"
         ],
         [
             "You are <i>so</i> not my type."
         ]
     ],
-    "d5h7gs9": [
+    "old_flirt_23": [
         [
             "Any",
             "reject",
@@ -284,11 +290,12 @@
             "Sorry, I genuinely can't tell."
         ]
     ],
-    "j8h3ks0": [
+    "old_flirt_24": [
         [
             "Any",
             "reject",
             "silly",
+            "cool",
             "upstanding",
             "unabashed",
             "non-mates"
@@ -297,19 +304,20 @@
             "Um... No. You're not even on my playing field."
         ]
     ],
-    "b3d5gs1": [
+    "old_flirt_25": [
         [
             "Any",
             "reject",
             "upstanding",
             "unabashed",
+            "cool",
             "non-mates"
         ],
         [
             "Ew. I'm too good for you..."
         ]
     ],
-    "b3d5gs111": [
+    "old_flirt_26": [
         [
             "Any",
             "reject",
@@ -320,7 +328,7 @@
             "Sorry, but I just don't see how this factors into my 20-moon plan."
         ]
     ],
-    "f5w7ks3": [
+    "old_flirt_27": [
         [
             "Any",
             "reject",
@@ -333,7 +341,7 @@
             "... What are you trying to do?"
         ]
     ],
-    "j5h9sd5": [
+    "old_flirt_28": [
         [
             "Any",
             "reject",
@@ -345,7 +353,7 @@
             "I think I'd rather take my chances with a Dark Forest cat."
         ]
     ],
-    "k3s7gs8": [
+    "old_flirt_29": [
         [
             "Any",
             "platonic_like",
@@ -356,17 +364,18 @@
             "This is why you're one of my closest friends."
         ]
     ],
-    "j3s7gs0": [
+    "old_flirt_30": [
         [
             "Any",
             "reject",
-            "assertive"
+            "assertive",
+            "unlawful"
         ],
         [
             "... Are you trying to start a fight?"
         ]
     ],
-    "b9h5ks1": [
+    "old_flirt_31": [
         [
             "Any",
             "reject",
@@ -376,7 +385,7 @@
             "Um, was that sarcasm?"
         ]
     ],
-    "k7h3xs2": [
+    "old_flirt_32": [
         [
             "Any",
             "reject",
@@ -388,7 +397,7 @@
             "...No. I'm sorry but just... no."
         ]
     ],
-    "j5d3gs3": [
+    "old_flirt_33": [
         [
             "Any",
             "reject",
@@ -402,7 +411,7 @@
             "Uh- me? Sorry, you aren't exactly my type..."
         ]
     ],
-    "h6d7ks4": [
+    "old_flirt_34": [
         [
             "Any",
             "reject",
@@ -415,7 +424,7 @@
             "Um... no."
         ]
     ],
-    "b5w3kd5": [
+    "old_flirt_35": [
         [
             "Any",
             "reject",
@@ -427,19 +436,20 @@
             "Don't talk to me."
         ]
     ],
-    "j6h5ks6": [
+    "old_flirt_36": [
         [
             "Any",
             "reject",
             "sweet",
             "stable",
-            "introspective"
+            "introspective",
+            "dislike"
         ],
         [
             "Just...no."
         ]
     ],
-    "b8w7jd7": [
+    "old_flirt_37": [
         [
             "Any",
             "reject",
@@ -452,17 +462,19 @@
             "Uhm, I'd rather... not."
         ]
     ],
-    "k7w3gf8": [
+    "old_flirt_38": [
         [
             "Any",
             "reject",
+            "neutral",
+            "non-mates",
             "neutral"
         ],
         [
             "Do I know you?"
         ]
     ],
-    "d6h5ks9": [
+    "old_flirt_39": [
         [
             "Any",
             "reject",
@@ -472,7 +484,7 @@
             "Uh, what's your name again?"
         ]
     ],
-    "a2s6df1": [
+    "old_flirt_40": [
         [
             "Any",
             "reject",
@@ -483,17 +495,18 @@
             "Wait, wait, stay right there! r_w, get over here! Listen to what y_c just said!"
         ]
     ],
-    "h3d4jk2": [
+    "old_flirt_41": [
         [
-            "warrior",
+            "Any",
             "reject",
-            "neurotic"
+            "neurotic",
+            "introspective"
         ],
         [
             "Oh, uh I'm sorry, but I think I have to go..."
         ]
     ],
-    "j5g6sd3": [
+    "old_flirt_42": [
         [
             "Any",
             "reject",
@@ -507,17 +520,34 @@
             "Let's pretend that didn't happen."
         ]
     ],
-    "d4f7xs4": [
+    "introspective_flirt_H1": [
         [
             "Any",
             "reject",
-            "upstanding"
+            "brooding",
+            "introspective",
+            "unlawful",
+            "non-mates"
+        ],
+        [
+            "...",
+            "Let's pretend that didn't happen.",
+            "Since that was uh, quite embarrassing for you."
+        ]
+    ],
+    "old_flirt_43": [
+        [
+            "Any",
+            "reject",
+            "upstanding",
+            "non-mates",
+            "dislike"
         ],
         [
             "Um, what made you think I'd ever say yes?"
         ]
     ],
-    "h2d6gs5": [
+    "old_flirt_44": [
         [
             "Any",
             "reject",
@@ -528,7 +558,7 @@
             "*Snrk* Did a badger teach you how to flirt?"
         ]
     ],
-    "d7f5xs6": [
+    "old_flirt_45": [
         [
             "Any",
             "reject",
@@ -538,7 +568,7 @@
             "Stop."
         ]
     ],
-    "h3d9gf7": [
+    "old_flirt_46": [
         [
             "Any",
             "reject",
@@ -548,7 +578,7 @@
             "You're... you're kidding, right?"
         ]
     ],
-    "f8w4kd8": [
+    "old_flirt_47": [
         [
             "Any",
             "reject",
@@ -560,7 +590,7 @@
             "You're delusional if you think you're good enough for me."
         ]
     ],
-    "d9w3gf0": [
+    "old_flirt_48": [
         [
             "Any",
             "reject",
@@ -570,7 +600,7 @@
             "Oh! Um, I'm gonna go..."
         ]
     ],
-    "d8f5xs2": [
+    "old_flirt_49": [
         [
             "Any",
             "reject"
@@ -579,7 +609,7 @@
             "Sorry, I... just remembered something I have to do. Bye."
         ]
     ],
-    "d5f6xs5": [
+    "old_flirt_50": [
         [
             "Any",
             "reject",
@@ -591,7 +621,7 @@
             "... What's that supposed to mean?"
         ]
     ],
-    "j5g6df6": [
+    "old_flirt_51": [
         [
             "Any",
             "reject",
@@ -602,7 +632,7 @@
             "Sorry, but I just see us as friends."
         ]
     ],
-    "j7s5gf8": [
+    "old_flirt_52": [
         [
             "Any",
             "reject",
@@ -613,7 +643,7 @@
             "Oh dear. Let me teach you how to flirt."
         ]
     ],
-    "h4d5xs9": [
+    "old_flirt_53": [
         [
             "Any",
             "reject",
@@ -626,7 +656,7 @@
             "Uh... sorry, but that was... horrible."
         ]
     ],
-    "f8d4gf0": [
+    "old_flirt_54": [
         [
             "Any",
             "reject",
@@ -637,29 +667,32 @@
             "... You've got a little something on your face..."
         ]
     ],
-    "d7f4xs1": [
+    "old_flirt_55": [
         [
             "Any",
             "reject",
-            "introspective"
+            "introspective",
+            "dislike",
+            "non-mates"
         ],
         [
             "Ugh... I'm not that shallow."
         ]
     ],
-    "h6d5gf3": [
+    "old_flirt_56": [
         [
             "Any",
             "reject",
             "silly",
             "unabashed",
+            "dislike",
             "non-mates"
         ],
         [
             "Frankly, I'd rather eat all our Clan's dirt left in the dirtplace."
         ]
     ],
-    "d5f4xs4": [
+    "old_flirt_57": [
         [
             "Any",
             "reject",
@@ -670,7 +703,7 @@
             "Hmph. Not interested."
         ]
     ],
-    "j8g6df5": [
+    "old_flirt_58": [
         [
             "Any",
             "reject",
@@ -681,7 +714,7 @@
             "Tell you what, y_c. I'll do us both a favor and pretend this never happened. M'kay?"
         ]
     ],
-    "j8g6df55": [
+    "old_flirt_59": [
         [
             "Any",
             "reject",
@@ -692,7 +725,7 @@
             "*Snrk*"
         ]
     ],
-    "h7d5xs6": [
+    "old_flirt_60": [
         [
             "Any",
             "reject",
@@ -707,7 +740,7 @@
             "Not interested."
         ]
     ],
-    "f8d5gf7": [
+    "old_flirt_61": [
         [
             "Any",
             "reject",
@@ -719,19 +752,20 @@
             "Ahem, and just to repeat it one more time ... my mate. Who I am in a very committed relationship with."
         ]
     ],
-    "d9f6xs8": [
+    "old_flirt_62": [
         [
             "Any",
             "reject",
             "cool",
-            "assertive"
+            "assertive",
+            "non-mates"
         ],
         [
             "Hehe. Thanks, cutie. But I just don't like you like that.",
             "Hey, keep your chin up, though. Plenty of other cats in the Clan who might catch your interest."
         ]
     ],
-    "j7g8df9": [
+    "old_flirt_63": [
         [
             "Any",
             "reject",
@@ -742,7 +776,7 @@
             "Oh, dear ... Um, why don't you just stick to admiring me from afar?"
         ]
     ],
-    "h8d7gf0": [
+    "old_flirt_64": [
         [
             "Any",
             "reject",
@@ -755,11 +789,11 @@
         ],
         [
             "Hahaha! That one got me laughing!",
-            "As if we'd actually get together ... could you imagine?",
-            "Wait, could you say it again? I want to try it out on my crush."
+            "As if we'd actually get together... could you imagine?",
+            "Wait, could you say it again? I want to try it out on their_crush."
         ]
     ],
-    "f9d6xs1": [
+    "old_flirt_65": [
         [
             "Any",
             "reject",
@@ -770,7 +804,7 @@
             "... For your own sake, I better have misheard you."
         ]
     ],
-    "h9d5xs21": [
+    "old_flirt_66": [
         [
             "Any",
             "reject",
@@ -783,18 +817,19 @@
             "Aw, bestie! That's sweet, but no. My heart belongs to another."
         ]
     ],
-    "h9d5xs2": [
+    "old_flirt_67": [
         [
             "Any",
             "reject",
             "brooding",
+            "unlawful",
             "non-mates"
         ],
         [
             "... You don't wanna be with a cat like me. Trust me."
         ]
     ],
-    "j8g7df4": [
+    "old_flirt_68": [
         [
             "Any",
             "reject",
@@ -805,7 +840,7 @@
             "Woah... Your breath stinks..."
         ]
     ],
-    "h7d6gf6": [
+    "old_flirt_69": [
         [
             "Any",
             "reject",
@@ -817,7 +852,7 @@
             "Eh ... Have you washed today..?"
         ]
     ],
-    "f9d6xs7": [
+    "old_flirt_70": [
         [
             "Any",
             "reject",
@@ -829,7 +864,7 @@
             "I'm sorry, y_c... We just ain't got that chemistry, you feel me?"
         ]
     ],
-    "d9f7gf8": [
+    "old_flirt_71": [
         [
             "Any",
             "reject",
@@ -838,14 +873,15 @@
             "stable",
             "upstanding",
             "assertive",
-            "platonic_like"
+            "platonic_like",
+            "non-mates"
         ],
         [
             "Ha! Very funny y_c!",
             "Wait, you were serious?"
         ]
     ],
-    "d4f2xs46453": [
+    "old_flirt_72": [
         [
             "Any",
             "from_mate"
@@ -855,13 +891,13 @@
             "Say it again, just one more time?"
         ]
     ],
-    "d4f2xs4919191": [
+    "old_flirt_73": [
         [
             "Any",
             "from_mate"
         ],
         [
-            "Oh ... That one took me back to our courtship days. ~"
+            "Oh ... That one took me back to our courtship days.~"
         ]
     ],
     "crush": [
@@ -875,20 +911,22 @@
             "You really had me smitten!"
         ]
     ],
-    "j5g1sd5": [
+    "old_flirt_74": [
         [
             "reject",
             "cool",
             "assertive",
             "brooding",
             "unabashed",
+            "dislike",
+            "non-mate",
             "any"
         ],
         [
             "If I act like I'm interested will it get you to stop?"
         ]
     ],
-    "f6d8xs6": [
+    "old_flirt_75": [
         [
             "Any",
             "brooding"
@@ -897,7 +935,7 @@
             "W-whatever..."
         ]
     ],
-    "j7g6df7": [
+    "old_flirt_76": [
         [
             "reject",
             "cool",
@@ -909,7 +947,7 @@
             "As much as I like you, we have got to work on your flirting ability, dear."
         ]
     ],
-    "j9g8df9": [
+    "old_flirt_77": [
         [
             "Any",
             "neurotic",
@@ -946,7 +984,7 @@
             "[Seems like a good sign ...?]"
         ]
     ],
-    "f9d0xs1": [
+    "old_flirt_78": [
         [
             "Any",
             "sweet",
@@ -956,14 +994,9 @@
             "Y- You really think so? Ah- thank you so much!"
         ]
     ],
-    "h0d9gf2": [
+    "old_flirt_79": [
         [
-            "warrior",
-            "deputy",
-            "leader",
-            "medicine cat",
-            "queen",
-            "mediator",
+            "Any",
             "assertive",
             "unabashed",
             "cool",
@@ -977,7 +1010,7 @@
             "You bet I remember that time you fell face first into the lake. Who doesn't!"
         ]
     ],
-    "j0g1df3": [
+    "old_flirt_80": [
         [
             "Any",
             "stable",
@@ -991,7 +1024,7 @@
             "Your pelt looks lovely in this lighting!"
         ]
     ],
-    "h1d2gf4": [
+    "old_flirt_81": [
         [
             "Any",
             "sweet",
@@ -1002,7 +1035,7 @@
             "Aw, that's so nice of you!"
         ]
     ],
-    "f3d4xs6": [
+    "old_flirt_82": [
         [
             "Any",
             "sweet",
@@ -1015,7 +1048,7 @@
             "Especially in the moonlight!"
         ]
     ],
-    "h3d5gf7": [
+    "old_flirt_83": [
         [
             "Any",
             "cool",
@@ -1036,7 +1069,7 @@
             "... But, I don't exactly hate it, either. ~"
         ]
     ],
-    "h5d6xs9": [
+    "old_flirt_84": [
         [
             "Any",
             "sweet",
@@ -1048,7 +1081,7 @@
             "Y-You deserve compliments much more than I do!"
         ]
     ],
-    "f6d7gf0": [
+    "old_flirt_85": [
         [
             "Any",
             "silly",
@@ -1058,7 +1091,7 @@
             "Awee, me? No way, you deserve all these compliments!"
         ]
     ],
-    "j7g6xs1": [
+    "old_flirt_86": [
         [
             "Any",
             "brooding"
@@ -1067,7 +1100,7 @@
             "Heh... Thanks..."
         ]
     ],
-    "h6d5gf2": [
+    "old_flirt_87": [
         [
             "Any",
             "sweet",
@@ -1077,7 +1110,7 @@
             "Aw, thank you! That's so sweet of you!"
         ]
     ],
-    "f7d8gf3": [
+    "old_flirt_88": [
         [
             "Any",
             "stable",
@@ -1090,7 +1123,7 @@
             "Was it always like that?"
         ]
     ],
-    "j8g7xs4": [
+    "old_flirt_89": [
         [
             "Any",
             "unabashed"
@@ -1099,7 +1132,7 @@
             "Is that so? Well, go on. Tell me more about how wonderful I am."
         ]
     ],
-    "h7d8gf5": [
+    "old_flirt_90": [
         [
             "Any",
             "silly",
@@ -1112,7 +1145,7 @@
             "Did I do good?"
         ]
     ],
-    "f8d9xs6": [
+    "old_flirt_91": [
         [
             "Any",
             "neurotic"
@@ -1122,7 +1155,7 @@
             "Sorry I wasn't expecting something as smooth as that!"
         ]
     ],
-    "j9g8xs7": [
+    "old_flirt_92": [
         [
             "Any",
             "sweet",
@@ -1133,7 +1166,7 @@
             "AWW!! That's so sweet of you!! You really think of me that way?"
         ]
     ],
-    "h8d9gf8": [
+    "old_flirt_93": [
         [
             "Any",
             "unlawful",
@@ -1143,7 +1176,7 @@
             "Heh. I am quite attractive, aren't I? Do go on."
         ]
     ],
-    "f9d0gf9": [
+    "old_flirt_94": [
         [
             "Any",
             "silly",
@@ -1154,7 +1187,7 @@
             "Finally! Someone who noticed."
         ]
     ],
-    "j0g9xs0": [
+    "old_flirt_95": [
         [
             "Any",
             "brooding",
@@ -1164,7 +1197,7 @@
             "At least you have eyes."
         ]
     ],
-    "h9d0xs1": [
+    "old_flirt_96": [
         [
             "Any",
             "unlawful",
@@ -1175,7 +1208,7 @@
             "Obviously."
         ]
     ],
-    "f0d9gf2": [
+    "old_flirt_97": [
         [
             "reject",
             "unabashed",
@@ -1186,18 +1219,18 @@
             "I always look lovely. Are you trying to imply that I don't?"
         ]
     ],
-    "j1g0xs3": [
+    "old_flirt_98": [
         [
             "Any",
             "neurotic",
             "non-mates"
         ],
         [
-            "R-Really... me? ...",
-            "T... Thanks... it.. It really means a lot."
+            "R-Really... me?",
+            "Thanks... it- It really means a lot."
         ]
     ],
-    "h0d1gf4": [
+    "old_flirt_99": [
         [
             "Any",
             "reject",
@@ -1209,7 +1242,7 @@
             "..That was an awful attempt at flirting, but you are cute, so I'll let it slide."
         ]
     ],
-    "f1d2gf5": [
+    "old_flirt_100": [
         [
             "Any",
             "brooding"
@@ -1218,7 +1251,7 @@
             "... Thanks. I needed to hear that."
         ]
     ],
-    "j3g4df9": [
+    "old_flirt_101": [
         [
             "from_mate",
             "Any"
@@ -1227,7 +1260,7 @@
             "Ah- I love you so much."
         ]
     ],
-    "h4d5xs0": [
+    "old_flirt_102": [
         [
             "reject",
             "cool",
@@ -1250,7 +1283,7 @@
             "Sorry, I just don't have time for something like this right now."
         ]
     ],
-    "f5d6gf1": [
+    "old_flirt_103": [
         [
             "Any",
             "introspective",
@@ -1260,17 +1293,17 @@
             "You noticed!? Aw, thank you! I spent extra time grooming my pelt today!"
         ]
     ],
-    "j6g5df2": [
+    "old_flirt_104": [
         [
             "Any",
             "silly",
             "unabashed"
         ],
         [
-            "Hehe! You've got something on your face.. Here I'll get it!"
+            "Hehe! You've got something on your face.. Here, I'll get it!"
         ]
     ],
-    "h5d6hxs3": [
+    "old_flirt_105": [
         [
             "reject",
             "upstanding",
@@ -1282,7 +1315,7 @@
             "..Thanks.. Your pelt looks... scruffy today?"
         ]
     ],
-    "f6d7gf4": [
+    "old_flirt_106": [
         [
             "Any",
             "from_mate",
@@ -1296,7 +1329,7 @@
             "Aw! I love you, too!"
         ]
     ],
-    "j7g6xs5": [
+    "old_flirt_107": [
         [
             "from_mate",
             "Any"
@@ -1305,7 +1338,7 @@
             "You're still just as good at flirting as when we first got together, you know?"
         ]
     ],
-    "h6d7gf6": [
+    "old_flirt_108": [
         [
             "from_mate",
             "Any",
@@ -1317,7 +1350,7 @@
             "What's your secret? You always know what I need to hear before I do."
         ]
     ],
-    "f7d8xs7": [
+    "old_flirt_109": [
         [
             "Any",
             "introspective",
@@ -1328,7 +1361,7 @@
             "If so, tell them they're doing a great job."
         ]
     ],
-    "j8g7df8": [
+    "old_flirt_110": [
         [
             "Any",
             "sweet",
@@ -1338,7 +1371,7 @@
             "Awww!! Thank you!"
         ]
     ],
-    "f8d9xs0": [
+    "old_flirt_111": [
         [
             "Any",
             "silly"
@@ -1352,18 +1385,19 @@
             "You smell like the freshkill I ate this morning! It tasted really really good!"
         ]
     ],
-    "j9g81df1": [
+    "old_flirt_112": [
         [
             "Any",
             "sweet",
             "unabashed",
-            "silly"
+            "silly",
+            "platonic_like"
         ],
         [
             "Aw! Aren't you adorable!"
         ]
     ],
-    "h8d9gf2": [
+    "old_flirt_113": [
         [
             "from_mate",
             "Any",
@@ -1375,7 +1409,7 @@
             "If StarClan came for me tomorrow, I would be ready to go, knowing that I got to spend time with a cat as wonderful as you."
         ]
     ],
-    "f9d0gf3": [
+    "old_flirt_114": [
         [
             "from_mate",
             "Any",
@@ -1388,7 +1422,7 @@
             "You know, I never knew that I'd end up with a cat like you... but now that I'm here, I wouldn't have it any other way."
         ]
     ],
-    "j0g1df4": [
+    "old_flirt_115": [
         [
             "Any",
             "stable",
@@ -1399,7 +1433,7 @@
             "O-Oh! Wow, you're wonderful, you know that, right?"
         ]
     ],
-    "h9d0xs5": [
+    "old_flirt_116": [
         [
             "beach",
             "reject",
@@ -1412,7 +1446,7 @@
             "I must have sand in my ears... What was that again?"
         ]
     ],
-    "f0d1gf6": [
+    "old_flirt_117": [
         [
             "forest",
             "Any",
@@ -1422,7 +1456,7 @@
             "Mmm! You smell wonderful, like the forest just after rain!"
         ]
     ],
-    "j1g2df7": [
+    "old_flirt_118": [
         [
             "Any",
             "brooding",
@@ -1432,7 +1466,7 @@
             "I... must agree that was actually neat. Look, I'm surprised."
         ]
     ],
-    "h0d2gf8": [
+    "old_flirt_119": [
         [
             "Any",
             "introspective",
@@ -1443,7 +1477,7 @@
             "Uh- you smell good too! Like- catmint and lavender!"
         ]
     ],
-    "f1d3gf9": [
+    "old_flirt_120": [
         [
             "Any",
             "introspective"
@@ -1453,7 +1487,7 @@
             "Has anyone ever told you that?"
         ]
     ],
-    "f2d5gf2": [
+    "old_flirt_121": [
         [
             "reject",
             "cool",
@@ -1463,7 +1497,7 @@
             "Hey, didn't I teach you that line?"
         ]
     ],
-    "f3d7gf5": [
+    "old_flirt_122": [
         [
             "Any",
             "neurotic",
@@ -1474,7 +1508,7 @@
             "What- uh, thanks! That's really nice of you."
         ]
     ],
-    "j5g0df9": [
+    "old_flirt_123": [
         [
             "reject",
             "brooding",
@@ -1487,7 +1521,7 @@
             "Okay then. Thanks, I guess."
         ]
     ],
-    "h4d0gf0": [
+    "old_flirt_124": [
         [
             "Any",
             "introspective",
@@ -1498,7 +1532,7 @@
             "And, uhm.. I'm not usually this nervous.. You flatter me."
         ]
     ],
-    "j6g2df2": [
+    "old_flirt_125": [
         [
             "Any",
             "silly"
@@ -1507,18 +1541,19 @@
             "You're beautiful like a butterfly, and you sparkle in the moonlight. Was that good, or what?"
         ]
     ],
-    "h5d2gf3": [
+    "old_flirt_126": [
         [
             "Any",
             "unabashed",
             "silly",
-            "cool"
+            "cool",
+            "non-mates"
         ],
         [
             "Thanks! That's the 15th time someone said I was beautiful today! I'm trying to get to 20!"
         ]
     ],
-    "f6d3gf4": [
+    "old_flirt_127": [
         [
             "Any",
             "neurotic",
@@ -1532,7 +1567,7 @@
             "Thank you. You're pretty, too."
         ]
     ],
-    "j7g4df5": [
+    "old_flirt_128": [
         [
             "Any",
             "brooding"
@@ -1541,7 +1576,7 @@
             "Your compliments are like a ray of sunshine in my bleak world."
         ]
     ],
-    "j8g6df8": [
+    "old_flirt_129": [
         [
             "Any",
             "silly",
@@ -1554,7 +1589,7 @@
             "This is fun!"
         ]
     ],
-    "h7d6gf9": [
+    "old_flirt_130": [
         [
             "Any",
             "unabashed",
@@ -1565,7 +1600,7 @@
             "I need to focus on my duties, but you're too attractive."
         ]
     ],
-    "j9g8df1": [
+    "old_flirt_131": [
         [
             "Any",
             "silly",
@@ -1575,7 +1610,7 @@
             "Arrggh, stop making me feel weird! It feels like there's butterflies in my belly whenever I see you as is!"
         ]
     ],
-    "j9gf8df1": [
+    "old_flirt_132": [
         [
             "Any",
             "from_mate",
@@ -1587,7 +1622,7 @@
             "I knew it. I've got the best mate EVER!"
         ]
     ],
-    "j9g8dbf1": [
+    "old_flirt_133": [
         [
             "reject",
             "from_mate",
@@ -1600,7 +1635,7 @@
             "Thanks, honey. That was really cute even though it was kind of lame..."
         ]
     ],
-    "jx9g8df1": [
+    "old_flirt_134": [
         [
             "reject",
             "from_mate",
@@ -1613,7 +1648,7 @@
             "Don't worry! You'll get better one day."
         ]
     ],
-    "j9g8dvf1": [
+    "old_flirt_135": [
         [
             "Any",
             "from_mate",
@@ -1626,7 +1661,7 @@
             "And what you just said made me feel much better!"
         ]
     ],
-    "j9g8d4f1": [
+    "old_flirt_136": [
         [
             "reject",
             "from_mate",
@@ -1639,7 +1674,7 @@
             "You really suck at that, you know? Hah."
         ]
     ],
-    "j9g28df1": [
+    "old_flirt_137": [
         [
             "Any",
             "from_mate",
@@ -1647,10 +1682,10 @@
             "unlawful"
         ],
         [
-            "... Oh, stop it. ~"
+            "... Oh, stop it.~"
         ]
     ],
-    "j9g8ddf1": [
+    "old_flirt_138": [
         [
             "Any",
             "brooding"
@@ -1804,6 +1839,7 @@
         [
             "Any",
             "heartbroken",
+            "reject",
             "assertive",
             "upstanding",
             "brooding"
@@ -2085,9 +2121,15 @@
             "reject"
         ],
         [
+<<<<<<< Updated upstream
             "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} not seem amused.]",
             "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
             "[You try one more time, but t_c lashes out at you, not afraid to get more blood on their claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
+=======
+            "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} do not seem amused.]",
+            "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
+            "[You try one more time, but t_c lashes out at you, not afraid to get more blood on {PRONOUN/t_c/poss} claws. It seems {PRONOUN/t_c/subject} aren't too fond of you.]"
+>>>>>>> Stashed changes
         ]
     ],
     "flirting_shunned_SQ3": [
@@ -2168,10 +2210,17 @@
             "you_shunned"
         ],
         [
+<<<<<<< Updated upstream
             "[You call softly to t_c as {PRONOUN/t_c/subject} {VERB/t_c/pass/passes}, and {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} in {PRONOUN/t_c/poss} tracks.]",
             "I... y_c?",
             "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, {PRONOUN/l_n/poss} eyes narrowed.]",
             "[t_c hastily backs away as {PRONOUN/t_c/subject} also {VERB/t_c/notice/notices} l_n, though you see {PRONOUN/t_c/object} trying to hide {PRONOUN/t_c/poss} smile.]"
+=======
+            "[You call softly to t_c as {PRONOUN/t_c/subject} pass, and {PRONOUN/t_c/subject} stop in {PRONOUN/t_c/poss} tracks.]",
+            "I... y_c?",
+            "[Across the camp, l_n pulls away from a discussion with r_w and strides towards you, {PRONOUN/l_n/poss} eyes narrowed.]",
+            "[t_c hastily backs away as {PRONOUN/t_c/subject} also notice l_n, though you see {PRONOUN/t_c/object} trying to hide {PRONOUN/t_c/poss} smile.]"
+>>>>>>> Stashed changes
         ]
     ],
     "flirting_shunned_CM4": [
@@ -2206,9 +2255,15 @@
         ],
         [
             "[Long after sundown, you and t_c are curled up in your makeshift nests at the edge of camp, but from {PRONOUN/t_c/poss} constant shifting, it's clear {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} having trouble sleeping.]",
+<<<<<<< Updated upstream
             "[You lean over and rest your head on t_c, whispering to {PRONOUN/t_c/object}. For a moment, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} frozen, but then {PRONOUN/t_c/subject} {VERB/t_c/press/presses} closer.]",
             "You... mean that? Even now?",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/curl/curls} {PRONOUN/t_c/poss} tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
+=======
+            "[You lean over and rest your head on t_c, whispering to {PRONOUN/t_c/object}. For a moment, {PRONOUN/t_c/subject} seem frozen, but then t_c presses closer.]",
+            "You... mean that? Even now?",
+            "[t_c curls {PRONOUN/t_c/poss} tail around you, and you do the same. You stay like that for a while, listening to t_c's breathing and sounds from the camp where neither of you are welcome.]"
+>>>>>>> Stashed changes
         ]
     ],
     "grieving_flirt_CM1": [
@@ -2219,7 +2274,11 @@
             "dead_close"
         ],
         [
+<<<<<<< Updated upstream
             "[t_c barely looks up at you, choking out a sob as {PRONOUN/t_c/subject} {VERB/t_c/tremble/trembles}.]",
+=======
+            "[t_c barely looks up at you, choking out a sob as {PRONOUN/t_c/subject} tremble.]",
+>>>>>>> Stashed changes
             "y_c, y_c I'm sorry. I- <i>hic</i> I can't...",
             "I can't love anyone like I did d_c.",
             "It.. if I lost you... it would destroy me if I did."
@@ -2320,7 +2379,11 @@
         ],
         [
             "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
+<<<<<<< Updated upstream
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
+=======
+            "How <b>dare</b> you, y_c. How dare you think you can replace d_c!"
+>>>>>>> Stashed changes
         ]
     ],
     "grieving_flirt_reuse11": [
@@ -2426,7 +2489,11 @@
         ],
         [
             "[t_c opens {PRONOUN/t_c/poss} maws and snarls at you]",
+<<<<<<< Updated upstream
             "How <b>dare</b> you y_c. How dare you think you can replace d_c!"
+=======
+            "How <b>dare</b> you, y_c. How dare you think you can replace d_c!"
+>>>>>>> Stashed changes
         ]
     ],
     "grieving_flirt_reuse432": [
