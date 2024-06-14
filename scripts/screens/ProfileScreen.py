@@ -12,7 +12,7 @@ from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 
 import ujson
 
-from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text, chunks
+from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text, chunks, get_cluster
 
 from .Screens import Screens
 
@@ -383,8 +383,6 @@ class ProfileScreen(Screens):
                     
                     if cat.pelt.inventory:
                         for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
-                            if accessory in cat.pelt.wild_accessories and cat.not_working():
-                                continue
                             if accessory in cat.pelt.accessories:
                                 self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), "", object_id="#fav_marker")
                             else:
@@ -469,12 +467,28 @@ class ProfileScreen(Screens):
             elif "halfmoon" in self.profile_elements and event.ui_element == self.profile_elements["halfmoon"]:
                 self.change_screen('moonplace screen')
             elif event.ui_element == self.profile_elements["favourite_button"]:
-                self.the_cat.favourite = False
                 self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].show()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 2
+            elif event.ui_element == self.profile_elements["favourite_button_2"]:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].show()
+                self.profile_elements["not_favourite_button"].hide()
+                self.the_cat.favourite = 3
+            elif event.ui_element == self.profile_elements["favourite_button_3"]:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
                 self.profile_elements["not_favourite_button"].show()
+                self.the_cat.favourite = 0
             elif event.ui_element == self.profile_elements["not_favourite_button"]:
-                self.the_cat.favourite = True
+                self.the_cat.favourite = 1
                 self.profile_elements["favourite_button"].show()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
                 self.profile_elements["not_favourite_button"].hide()
             else:
                 self.handle_tab_events(event)
@@ -784,8 +798,6 @@ class ProfileScreen(Screens):
                     for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len + start_index)], start = start_index):
                         try:
                             if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                                if accessory in cat.pelt.wild_accessories and cat.not_working():
-                                    continue
                                 if accessory in cat.pelt.accessories:
                                     self.accessory_buttons[str(i) + str(randint(0,5000))] = UIImageButton(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), "", object_id="#fav_marker")
                                 else:
@@ -1048,6 +1060,20 @@ class ProfileScreen(Screens):
                                                                   "",
                                                                   object_id="#fav_star",
                                                                   manager=MANAGER,
+                                                                  tool_tip_text='Move to favourite group 2',
+                                                                  starting_height=2)
+        self.profile_elements["favourite_button_2"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 287), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_2",
+                                                                  manager=MANAGER,
+                                                                  tool_tip_text='Move to favourite group 3',
+                                                                  starting_height=2)
+        self.profile_elements["favourite_button_3"] = UIImageButton(scale(pygame.Rect
+                                                                        ((x_pos, 287), (56, 56))),
+                                                                  "",
+                                                                  object_id="#fav_star_3",
+                                                                  manager=MANAGER,
                                                                   tool_tip_text='Remove favorite status',
                                                                   starting_height=2)
 
@@ -1060,11 +1086,26 @@ class ProfileScreen(Screens):
                                                                       tool_tip_text='Mark as favorite',
                                                                       starting_height=2)
 
-        if self.the_cat.favourite:
-            self.profile_elements["favourite_button"].show()
-            self.profile_elements["not_favourite_button"].hide()
+        if self.the_cat.favourite != 0:
+            if self.the_cat.favourite == 1:
+                self.profile_elements["favourite_button"].show()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 2:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].show()
+                self.profile_elements["favourite_button_3"].hide()
+                self.profile_elements["not_favourite_button"].hide()
+            elif self.the_cat.favourite == 3:
+                self.profile_elements["favourite_button"].hide()
+                self.profile_elements["favourite_button_2"].hide()
+                self.profile_elements["favourite_button_3"].show()
+                self.profile_elements["not_favourite_button"].hide()
         else:
             self.profile_elements["favourite_button"].hide()
+            self.profile_elements["favourite_button_2"].hide()
+            self.profile_elements["favourite_button_3"].hide()
             self.profile_elements["not_favourite_button"].show()
 
         if self.accessory_tab_button:
@@ -1109,7 +1150,7 @@ class ProfileScreen(Screens):
                                             tool_tip_text='Switch MC',
                                             manager=MANAGER)
 
-        if self.the_cat.ID != game.clan.your_cat.ID and not self.the_cat.dead and not self.the_cat.outside and not game.clan.your_cat.dead and not game.clan.your_cat.outside and not game.clan.your_cat.moons < 0:
+        if self.the_cat.ID != game.clan.your_cat.ID and not game.clan.your_cat.dead and not self.the_cat.dead and not self.the_cat.outside and not game.clan.your_cat.outside and not game.clan.your_cat.moons < 0:
             if self.the_cat.status not in ['leader', 'mediator', 'mediator apprentice', "queen", "queen's apprentice"]:
                 self.profile_elements["talk"] = UIImageButton(scale(pygame.Rect(
                     (726, 220), (68, 68))),
@@ -1141,7 +1182,7 @@ class ProfileScreen(Screens):
 
             cat_dead_conditions = cat_dead_condition_sc or cat_dead_condition_df or cat_dead_condition_ur
 
-            cat_alive_condition_sc = game.clan.your_cat.dead and not game.clan.your_cat.df and (self.the_cat.dead or (self.the_cat.skills.meets_skill_requirement(SkillPath.STAR) and self.the_cat.moons >= 1))
+            cat_alive_condition_sc = game.clan.your_cat.dead and not game.clan.your_cat.df and game.clan.your_cat.ID in game.clan.starclan_cats and (self.the_cat.dead or (self.the_cat.skills.meets_skill_requirement(SkillPath.STAR) and self.the_cat.moons >= 1))
             cat_alive_condition_df = game.clan.your_cat.dead and game.clan.your_cat.df and (self.the_cat.dead or (self.the_cat.skills.meets_skill_requirement(SkillPath.DARK) and self.the_cat.moons >= 1) or self.the_cat.joined_df)
             cat_alive_condition_ur = game.clan.your_cat.dead and game.clan.your_cat.ID in game.clan.unknown_cats and (self.the_cat.dead or (self.the_cat.skills.meets_skill_requirement(SkillPath.GHOST) and self.the_cat.moons >= 1))
             cat_alive_skills_condition = cat_alive_condition_sc or cat_alive_condition_df or cat_alive_condition_ur
@@ -1210,14 +1251,17 @@ class ProfileScreen(Screens):
                         self.profile_elements["flirt"].enable()
 
         if self.the_cat.ID == game.clan.your_cat.ID and not game.clan.your_cat.dead and not game.clan.your_cat.outside:
+            if self.open_tab == "faith":
+                self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.profile_elements['your_tab'] = UIImageButton(scale(pygame.Rect((800, 1244), (352, 60))), "",
                                             object_id="#your_tab", starting_height=1, manager=MANAGER)
             self.your_tab = self.profile_elements['your_tab']
+            
         else:
             if self.open_tab == 'your tab':
                 self.close_current_tab()
-            if self.open_tab == "faith" and (self.the_cat.dead  or self.the_cat.outside or self.the_cat.moons < 6):
+            if self.open_tab == "faith" and (self.the_cat.dead or self.the_cat.outside or self.the_cat.moons < 6):
                 self.close_current_tab()
             self.placeholder_tab_3.kill()
             self.placeholder_tab_3 = None
@@ -2473,6 +2517,8 @@ class ProfileScreen(Screens):
         if self.faith_bar and self.faith_text:
             self.faith_bar.kill()
             self.faith_text.kill()
+        if self.the_cat.no_faith:
+            self.the_cat.faith = 0
         cat_faith = round(self.the_cat.faith)
         if cat_faith > 9:
             cat_faith = 9
@@ -2487,28 +2533,13 @@ class ProfileScreen(Screens):
                                                         line_spacing=1, manager=MANAGER)
         
     def get_faith_text(self, faith):
-        faith_dict = {
-            "-9": "This cat's devotion to the Dark Forest is unshakable and absolute.",
-            "-8": "Nearly all devotion has been redirected towards the Dark Forest. This cat sees StarClan's ways as hopelessly weak and obsolete.",
-            "-7": "Lured in by the Dark Forest's promises of power, this cat willingly walks its terrible path.",
-            "-6": "This cat believes the Dark Forest's teachings will help them gain strength and security for their Clan, even if the methods make them uneasy.",
-            "-5": "Driven by the Dark Forest's pull, this cat lives in an moral crisis, constantly wavering between noble and dark impulses.",
-            "-4": "A growing doubt in their mind makes this cat question if the Dark Forest's ways could be justified as merely a different path.",
-            "-3": "In moments of weakness, this cat fantasizes about the strength and freedom the Dark Forest could offer.",
-            "-2": "Curiosity about the Dark Forest's power nags at the back of this cat's mind from time to time.",
-            "-1": "While not fully convinced, this cat sometimes wonders if the Dark Forest exists to tempt them away from the warrior code.",
-            "0": "This cat has no belief or reverence for StarClan or the Dark Forest.",
-            "1": "While not actively disbelieving, this cat is highly skeptical of StarClan's existence. They follow Clan rituals out of tradition rather than true faith.",
-            "2": "This cat is undecided on whether StarClan is truly watching over them. They keep an open mind but need more proof to be fully convinced.",
-            "3": "There are times this cat feels StarClan's presence. Their faith waxes and wanes periodically.",
-            "4": "This cat leans towards believing in StarClan more often than not.",
-            "5": "This cat holds a steady faith that StarClan watches over the Clans. This cat often looks for signs their ancestors are guiding them.",
-            "6": "A firmly devout believer, this cat has faith that StarClan exists.",
-            "7": "Beyond just believing, this cat actively searches for signs and omens from StarClan to guide their actions and that of their Clanmates",
-            "8": "StarClan's wisdom and approval guide every aspect of this cat's life.",
-            "9": "This cat's devotion to StarClan is unshakable and absolute."
-        }
-        return faith_dict[str(faith)]
+        faith_dict = {}
+        with open("resources/dicts/faith_display.json", "r") as read_file:
+            faith_dict = ujson.loads(read_file.read())
+            cluster1, cluster2 = get_cluster(self.the_cat.personality.trait)
+        if faith == 0:
+            return faith_dict[str(faith)]["All"]
+        return faith_dict[str(faith)][str(cluster1)]
     
     def toggle_accessories_tab(self):
         """Opens accessories tab"""
@@ -2617,8 +2648,6 @@ class ProfileScreen(Screens):
             for a, accessory in enumerate(new_inv[start_index:min(end_index, inventory_len)], start = start_index):
                 try:
                     if self.search_bar.get_text() in ["", "search"] or self.search_bar.get_text().lower() in accessory.lower():
-                        if accessory in cat.pelt.wild_accessories and cat.not_working():
-                            continue
                         if accessory in cat.pelt.accessories:
                             self.accessory_buttons[str(i)] = UIImageButton(scale(pygame.Rect((200 + pos_x, 730 + pos_y), (100, 100))), "", object_id="#fav_marker")
                         else:

@@ -516,12 +516,17 @@ def create_new_cat(Cat,
         history.add_beginning(new_cat)
 
         if new_cat.df:
-            new_cat.dead_for = randint(90,190)
+            if new_cat.parent2 != game.clan.your_cat.ID:
+                new_cat.dead_for = randint(50,140)
             new_cat.dead = True
             new_cat.status = status
 
+            if new_cat.parent2 == game.clan.your_cat.ID:
+                new_cat.thought = "Just met their parent!"
+                new_cat.dead_for = new_cat.moons
+
         if new_cat.dead and not new_cat.df and not new_cat.outside:
-            new_cat.dead_for = randint(90,190)
+            new_cat.dead_for = randint(50,140)
             new_cat.status = status
      
 
@@ -771,6 +776,8 @@ def change_relationship_values(cats_to: list,
         changed = True"""
 
     # pick out the correct cats
+    if not cats_from:
+        return
     for single_cat_from in cats_from:
         for single_cat_to_ID in cats_to:
             single_cat_to = single_cat_from.fetch_cat(single_cat_to_ID)
@@ -886,7 +893,7 @@ def name_repl(m, cat_dict):
 def process_text(text, cat_dict, raise_exception=False):
     """ Add the correct name and pronouns into a string. """
     adjust_text = re.sub(r"\{(.*?)\}", lambda x: pronoun_repl(x, cat_dict, raise_exception),
-                                                              text)
+                                                            text)
 
     name_patterns = [r'(?<!\{)' + re.escape(l) + r'(?!\})' for l in cat_dict]
     adjust_text = re.sub("|".join(name_patterns), lambda x: name_repl(x, cat_dict), adjust_text)
@@ -1131,14 +1138,14 @@ def event_text_adjust(Cat,
         cat_dict["m_c"] = (str(cat.name), choice(cat.pronouns))
         cat_dict["p_l"] = cat_dict["m_c"]
     if "acc_plural" in text:
-        if cat.pelt.accessory and cat.pelt.accessory not in cat.pelt.accessories:
-            cat.pelt.accessories.append(cat.pelt.accessory)
-        acc = cat.pelt.accessories[-1]
+        if cat.pelt.inventory and cat.pelt.accessory not in cat.pelt.inventory:
+            cat.pelt.inventory.append(cat.pelt.accessory)
+        acc = cat.pelt.inventory[-1]
         text = text.replace("acc_plural", str(ACC_DISPLAY[acc]["plural"]))
     if "acc_singular" in text:
-        if cat.pelt.accessory and cat.pelt.accessory not in cat.pelt.accessories:
-            cat.pelt.accessories.append(cat.pelt.accessory)
-        acc = cat.pelt.accessories[-1]
+        if cat.pelt.inventory and cat.pelt.accessory not in cat.pelt.inventory:
+            cat.pelt.inventory.append(cat.pelt.accessory)
+        acc = cat.pelt.inventory[-1]
         text = text.replace("acc_singular", str(ACC_DISPLAY[acc]["singular"]))
 
     # if murder_reveal:

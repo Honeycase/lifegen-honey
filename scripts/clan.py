@@ -410,7 +410,10 @@ class Clan():
             for clan_cat in game.clan.clan_cats:
                 clan_cat_cat = Cat.fetch_cat(clan_cat)
                 if clan_cat_cat:
-                    clan_cat_cat.faith -= round(random.uniform(0,1), 2)
+                    if game.clan.followingsc:
+                        clan_cat_cat.faith += round(random.uniform(0,1), 2)
+                    else:
+                        clan_cat_cat.faith -= round(random.uniform(0,1), 2)
         game.switches['new_leader'] = None
 
     def new_deputy(self, deputy):
@@ -906,6 +909,15 @@ class Clan():
         
         if "your_cat" in clan_data:
             game.clan.your_cat = Cat.all_cats[clan_data["your_cat"]]
+
+        if "murdered" in clan_data:
+            game.clan.murdered = clan_data["murdered"]
+
+        if "affair" in clan_data:
+            game.clan.murdered = clan_data["affair"]
+
+        if "exile_return" in clan_data:
+            game.clan.murdered = clan_data["exile_return"]
         
         if "achievements" in clan_data:
             game.clan.achievements = clan_data["achievements"]

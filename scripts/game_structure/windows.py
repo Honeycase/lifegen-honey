@@ -1437,6 +1437,8 @@ class DeathScreen(UIWindow):
         self.mediator_button.enable()
         if game.clan.your_cat.revives < 5:
             self.mediator_button2.enable()
+        if (game.clan.your_cat.dead_for >= game.config["fading"]["age_to_fade"]) and game.clan.your_cat.prevent_fading == False:
+            self.mediator_button2.disable()
         self.mediator_button3.enable()
 
     def process_event(self, event):
@@ -1829,6 +1831,11 @@ class ChangeCatToggles(UIWindow):
                                                     object_id="#text_box_30_horizleft_pad_0_8",
                                                     container=self)
         
+        self.text_5 = pygame_gui.elements.UITextBox("Set neutral faith",
+                                                    scale(pygame.Rect(110, 260, -1, 50)), 
+                                                    object_id="#text_box_30_horizleft_pad_0_8",
+                                                    container=self)
+        
         # Text
         
     def refresh_checkboxes(self):
@@ -1896,6 +1903,19 @@ class ChangeCatToggles(UIWindow):
                                                          container=self,
                                                          object_id=box_type,
                                                          tool_tip_text=tool_tip)
+        
+        #No faith
+        if self.the_cat.no_faith:
+            box_type = "#checked_checkbox"
+            tool_tip = "Lock this cat's faith to 0."
+        else:
+            box_type = "#unchecked_checkbox"
+            tool_tip = "Lock this cat's faith to 0."
+        
+        self.checkboxes["no_faith"] = UIImageButton(scale(pygame.Rect(45, 250, 68, 68)), "",
+                                                         container=self,
+                                                         object_id=box_type,
+                                                         tool_tip_text=tool_tip)
 
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
@@ -1915,6 +1935,9 @@ class ChangeCatToggles(UIWindow):
                 self.refresh_checkboxes()
             elif event.ui_element == self.checkboxes["prevent_mates"]:
                 self.the_cat.no_mates = not self.the_cat.no_mates
+                self.refresh_checkboxes()
+            elif event.ui_element == self.checkboxes["no_faith"]:
+                self.the_cat.no_faith = not self.the_cat.no_faith
                 self.refresh_checkboxes()
         
         return super().process_event(event)
